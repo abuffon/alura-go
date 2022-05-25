@@ -1,0 +1,5 @@
+docker build -t abuffon/go-alura .
+docker run --rm -it --name go-alura -v $(pwd):/go abuffon/go-alura bash
+
+?
+go install golang.org/x/tools/cmd/goimports@latest
